@@ -1,18 +1,18 @@
-#define <iostream>
-#define <stdexcept>
-#define <string.h>
+#include <iostream>
+#include <stdexcept>
+#include <string.h>
  using namespace std;
-Class consulta
+class consulta
 {
 	private:
-	DtFecha fechaConsulta;
+//	DtFecha fechaConsulta;
 	string motivo;
 	
 	public:
-		void setFechaConsulta(DtFecha *);
+//		void setFechaConsulta(DtFecha *);
 		void setmotivo(string *);
-		DtFecha FechaConsulta (DtFecha *);
-		string setmotivo(string *);
+//		DtFecha FechaConsulta (DtFecha *);
+//		string setmotivo(string *);
 		
 		
-}
+};

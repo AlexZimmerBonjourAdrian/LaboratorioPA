@@ -1,13 +1,13 @@
-#define <iostream>
-#define <stdexcept>
-#define <string.h>
+#include <iostream>
+#include <stdexcept>
+#include <string.h>
  using namespace std;
  
- class Genero:
+ class Genero
 {
  		private:
- 			enum genero (macho, hembra);
+ 			enum Enumgenero{macho,hembra};
  		public:
- 			void setGenero(genero *);
- 			genero getGenero();
-}
+ 			void setGenero(Enumgenero *);
+ 			Enumgenero getGenero();
+};

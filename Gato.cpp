@@ -1,23 +1,23 @@
 
-#define <iostream>
-#define <stdexcept>
-#define <string.h>
- using namespace std;
+#include <iostream>
+#include <stdexcept>
+#include <string.h>
+using namespace std;
  
-Class Socio
+class Gato
 {
 	private:
 		string ci;
 		string nombre;
-		DtFecha fechaingreso;
+		//Fecha * fechaingreso=new Fecha();
 		
 	
 	public:
 		void setci(string *);
 		void setnombre(string *);
-		void fechaingreso(DtFecha *);
+		//void fechaingreso(DtFecha *);
 		string getci();
 		string getnombre();
-		DtFecha fechaingreso();
+		//DtFecha fechaingreso();
 	
-}
+};

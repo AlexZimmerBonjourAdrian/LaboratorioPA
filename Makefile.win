@@ -1,0 +1,52 @@
+# Project: Laboratorio
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Consulta.o Fecha.o Gato.o Genero.o main.o Mascota.o Perro.o RazaPerro.o Socio.o
+LINKOBJ  = Consulta.o Fecha.o Gato.o Genero.o main.o Mascota.o Perro.o RazaPerro.o Socio.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Laboratorio.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Consulta.o: Consulta.cpp
+	$(CPP) -c Consulta.cpp -o Consulta.o $(CXXFLAGS)
+
+Fecha.o: Fecha.cpp
+	$(CPP) -c Fecha.cpp -o Fecha.o $(CXXFLAGS)
+
+Gato.o: Gato.cpp
+	$(CPP) -c Gato.cpp -o Gato.o $(CXXFLAGS)
+
+Genero.o: Genero.cpp
+	$(CPP) -c Genero.cpp -o Genero.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Mascota.o: Mascota.cpp
+	$(CPP) -c Mascota.cpp -o Mascota.o $(CXXFLAGS)
+
+Perro.o: Perro.cpp
+	$(CPP) -c Perro.cpp -o Perro.o $(CXXFLAGS)
+
+RazaPerro.o: RazaPerro.cpp
+	$(CPP) -c RazaPerro.cpp -o RazaPerro.o $(CXXFLAGS)
+
+Socio.o: Socio.cpp
+	$(CPP) -c Socio.cpp -o Socio.o $(CXXFLAGS)

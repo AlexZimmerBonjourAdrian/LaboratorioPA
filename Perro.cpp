@@ -1,14 +1,15 @@
-#define <iostream>
-#define <stdexcept>
-#define <string.h>
+#include <iostream>
+#include <stdexcept>
+#include <string.h>
  using namespace std;
 
-Class Perro
+class Perro
 {
 private:
- RazaPerro Raza;
+
  bool VacunaCachorro;
  enum RazaPerro {labrador,ovejero,bulldog,pitbull,collie,penkies,otro};
+  RazaPerro Raza;
  public:
   void setRaza(RazaPerro *);
   void setVacunaCachorro(bool *);
@@ -16,4 +17,5 @@ private:
   bool getVacunaCacharro(); 
   
   
-}
+  
+};

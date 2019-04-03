@@ -1,8 +1,6 @@
-#include <iostream>
-#include <stdexcept>
-#include <string.h>
- using namespace std;
 
+using namespace std;
+ 
 class Perro
 {
 private:
@@ -10,12 +8,14 @@ private:
  bool VacunaCachorro;
  enum RazaPerro {labrador,ovejero,bulldog,pitbull,collie,penkies,otro};
   RazaPerro Raza;
+
  public:
   void setRaza(RazaPerro *);
   void setVacunaCachorro(bool *);
   RazaPerro getRaza();
   bool getVacunaCacharro(); 
-  
+
+
   
   
 };

@@ -1,7 +1,4 @@
-
-#include <iostream>
-#include <stdexcept>
-#include <string.h>
+#include <string>
 using namespace std;
  
 class Gato
@@ -13,8 +10,6 @@ class Gato
 		
 	
 	public:
-		void setci(string *);
-		void setnombre(string *);
 		//void fechaingreso(DtFecha *);
 		string getci();
 		string getnombre();
